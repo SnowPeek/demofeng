@@ -15,6 +15,7 @@ public class UserInfoController {
     public RespJson selectUser(@RequestParam Integer id){
 
         return RespJson.buildSuccessResponse(userInfoService.select(id));
+
     }
 
 }
