@@ -32,8 +32,9 @@ public class GetContent {
         int j = 0 ;
         int z = 0 ;
         for (int i = 0;i < elements.size();i++){
-            if(j <= titles.size()){
+            if(j < titles.size()){
                 title = titles.get(i).text();
+                url = titles.get(i).select("a").attr("href");
                 j ++ ;
             }else{
                 title = "title没有了哦 ！！！！！！！！！";
@@ -45,7 +46,7 @@ public class GetContent {
                 content = "content没有了哦。。。。。。。。。";
             }
 
-            url = titles.get(i).select("a").attr("href");
+
             Output.writeU(title,content, url);      //每个都写入文件
         }
         //百度百科模块

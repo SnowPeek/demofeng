@@ -15,7 +15,7 @@ import java.io.OutputStreamWriter;
 public class Output {
 
     public static void writeU(String title,String content,String url){
-        String filePath = "C:\\2020\\TEST\\PuTong.txt";   //写入地址
+        String filePath = "C:\\2020\\TEST\\PuTong2.txt";   //写入地址
         BufferedWriter out = null;
         try {
             out = new BufferedWriter(new OutputStreamWriter(
